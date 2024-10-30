@@ -89,7 +89,7 @@ function toggleGiftDetails() {
 // Enlace de Playlist de Spotify
 function openYouTube() {
         // Reemplaza 'PL_ID_DE_TU_PLAYLIST' con el ID de tu playlist de YouTube
-        window.open("https://youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&si=n2NGiSxvmmIwLTMw", "_blank");
+        window.open("https://youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=ig1Fg7eTZ65ir43_gr9MkA", "_blank");
     }
 
 // Control del Slider de Imágenes
