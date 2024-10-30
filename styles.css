@@ -1,0 +1,850 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #f8f3f1;
+}
+
+/* Colores */
+:root {
+    --dark-gray: #333333;
+    --elegant-gold: #b29700;
+}
+
+/* Container principal */
+.container {
+    width: 85%;
+    max-width: 900px; /* Aumenta el ancho máximo para PC */
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.section {
+    padding: 30px 20px; /* Aumenta el padding lateral para más espacio */
+    position: relative;
+    z-index: 1;
+}
+
+/* Fondo general */
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/fondo_web.webp');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        background-image: url('images/fondo_movil.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+}
+
+/* Fondo semitransparente en móviles */
+@media (max-width: 767px) {
+    .text-background {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 10px;
+        border-radius: 8px;
+        display: inline-block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Sección de Confirmación de Asistencia */
+#rsvp h2, #gifts h2, #dj-section h2 {
+    color: var(--elegant-gold);
+}
+
+/* Botones dorados para las secciones 8, 9 y 10 */
+#rsvp-form button,
+.contact-buttons .contact-link,
+#gift-button,
+#dj-section button {
+    background-color: var(--elegant-gold);
+    color: white;
+}
+
+/* Ajustes adicionales para móvil */
+@media (max-width: 767px) {
+    .container {
+        width: 95%; /* Ajusta el ancho para que tenga un buen margen en móviles */
+    }
+    
+    .section {
+        padding: 20px 15px; /* Reduce el padding para que quede todo bien estructurado en móvil */
+    }
+    
+    #countdown-timer div {
+        min-width: 60px; /* Asegura que los contenedores se vean bien en pantallas pequeñas */
+    }
+}
+
+
+/* Estilo de bienvenida en la Sección 1 */
+#welcome h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    color: var(--elegant-gold);
+    margin-bottom: 15px;
+}
+
+#welcome p {
+    font-size: 1.2em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.names h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5em;
+    color: var(--elegant-gold);
+    margin: 0;
+}
+
+.names h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: var(--elegant-gold);
+    margin: 0;
+}
+
+/* Estilos de la Sección 2: Fecha y Hora */
+.date-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.date-image img {
+    width: 250px;
+    height: 350px;
+    border-radius: 150px 150px 0 0;
+    object-fit: cover;
+}
+
+.date-text h2 {
+    font-size: 2em;
+    color: var(--elegant-gold);
+}
+
+.date-text p {
+    font-size: 1.5em;
+    color: var(--dark-gray);
+}
+
+/* Diseño de la Sección 2 para móviles */
+@media (max-width: 767px) {
+    .date-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .date-image img {
+        width: 90%;
+        height: auto;
+        border-radius: 150px 150px 0 0;
+    }
+}
+
+/* Sección 3 Ubicación */
+.location-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.location-text {
+    max-width: 45%;
+    text-align: left;
+}
+
+.map-embed {
+    max-width: 45%;
+}
+
+@media (min-width: 768px) {
+    .location-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.map-button {
+    display: inline-block;
+    background-color: #d49fa3;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.map-button:hover {
+    background-color: #c08488;
+}
+
+/* Icono dorado para las secciones */
+.gold-icon {
+    color: var(--elegant-gold);
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Estilos de texto y botones en general */
+h2, h3 {
+    color: var(--elegant-gold);
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+p {
+    color: var(--dark-gray);
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: var(--elegant-gold);
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #a38900;
+}
+
+#countdown-timer {
+    display: flex;
+    gap: 5px;
+    font-size: 1em;
+    color: var(--elegant-gold);
+    margin-top: 15px;
+    justify-content: center;
+}
+
+#countdown-timer div {
+    background-color: #f8f3f1;
+    padding: 5px 8px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#countdown-timer span {
+    display: block;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: var(--dark-gray);
+}
+
+/* Estilos del Formulario RSVP */
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 15px;
+    padding: 0 10px;
+}
+
+#rsvp-form input {
+    padding: 8px;
+    border: 1px solid var(--elegant-gold);
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: var(--dark-gray);
+}
+
+#rsvp-form button {
+    padding: 10px 20px;
+    background-color: var(--elegant-gold);
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#rsvp-form button:hover {
+    background-color: #a38900;
+}
+
+/* Estilos del Recuadro de Bienvenida */
+#welcome-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+#welcome-box {
+    background-color: #f8f3f1;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 85%;
+    max-width: 350px;
+}
+
+/* Botón de control de música */
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--elegant-gold);
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    transition: background-color 0.3s;
+}
+
+#music-control:hover {
+    background-color: #a38900;
+}
+
+/* Ajustes de animación */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.section {
+    animation: fadeIn 1.5s ease-in-out;
+}
+/* Sección 4: Cuenta Regresiva */
+#countdown {
+    text-align: center;
+    color: var(--dark-gray);
+    padding: 40px 20px;
+}
+
+.countdown-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: var(--elegant-gold);
+    margin-bottom: 10px;
+}
+
+.countdown-subtitle {
+    font-size: 1.1em;
+    color: var(--dark-gray);
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px) {
+    #countdown-timer {
+        gap: 10px;
+        font-size: 0.8em; /* Reduce el tamaño del texto */
+        padding: 0 10px; /* Ajuste de márgenes laterales */
+    }
+
+    #countdown-timer div {
+        padding: 10px 15px; /* Ajuste del espacio interno */
+        min-width: 60px; /* Asegura que no se corte en móviles */
+    }
+
+    #countdown-timer span {
+        font-size: 1.2em; /* Ajuste del tamaño del número */
+    }
+
+    .countdown-quote {
+        font-size: 1em;
+        padding: 0 15px; /* Ajuste de los márgenes laterales */
+    }
+}
+#dress-code {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#dress-code h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #b29700; /* Cambia este color si necesitas uno diferente */
+    margin-bottom: 10px;
+}
+
+#dress-code p {
+    color: #333333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+/* Sección 6: Slider de Imágenes */
+#gallery {
+    position: relative;
+    max-width: 700px; /* Ajustado para que sea más pequeño en escritorio */
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Botones de navegación */
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    #gallery {
+        max-width: 100%; /* Ocupa el ancho completo en móviles */
+    }
+}
+
+/* Estilo base del itinerario */
+#itinerary {
+    text-align: center;
+    padding: 30px;
+}
+
+#itinerary h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #b29700; /* Dorado elegante */
+    margin-bottom: 20px;
+}
+
+.timeline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en dispositivos móviles */
+    padding: 0 10px; /* Añade algo de espacio a los lados */
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 1;
+    height: 2px;
+    background-color: #b29700; /* Línea dorada elegante */
+    z-index: -1;
+    transform: translateY(-50%);
+}
+
+.event {
+    text-align: center;
+    position: relative;
+    margin: 0 10px;
+    min-width: 80px; /* Para asegurar el tamaño mínimo en móviles */
+}
+
+.event img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.event p {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.event span {
+    font-size: 0.9em;
+    color: #555;
+}
+
+/* Corazones como separadores */
+.timeline .event::after {
+    content: "❤";
+    font-size: 1.2em;
+    color: #b29700;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+}
+
+.timeline .event:last-child::after {
+    content: ""; /* Quita el corazón en el último evento */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 767px) {
+    #itinerary h2 {
+        font-size: 2em; /* Reduce el tamaño del título en móviles */
+    }
+
+    .timeline {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0 10px; /* Ajusta el margen para mejorar la visualización */
+    }
+
+    .event {
+        min-width: 70px; /* Reduce el ancho mínimo de cada evento */
+        margin: 0 5px;
+    }
+
+    .event img {
+        width: 40px; /* Reduce el tamaño de los íconos */
+        height: 40px;
+    }
+
+    .event p, .event span {
+        font-size: 0.8em; /* Reduce el tamaño del texto */
+    }
+
+    .timeline .event::after {
+        right: -15px; /* Reduce la separación entre los corazones en móviles */
+    }
+}
+
+/* Sección de Confirmación de Asistencia */
+#rsvp {
+    text-align: center;
+    padding: 30px;
+}
+
+#rsvp h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #b29700; /* Dorado elegante */
+    margin-bottom: 20px;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group input,
+#confirmation {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #e0dcdc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f8f3f1;
+    color: #333;
+}
+
+#rsvp-form textarea {
+    padding: 10px;
+    border: 1px solid #e0dcdc;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f8f3f1;
+    color: #333;
+    resize: vertical;
+}
+
+#rsvp-form button {
+    background-color: #d49fa3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#rsvp-form button:hover {
+    background-color: #c08488;
+}
+
+/* Opciones de Contacto */
+.contact-options {
+    margin-top: 20px;
+}
+
+.contact-options p {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.contact-buttons button {
+    background-color: #d49fa3;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-buttons button:hover {
+    background-color: #c08488;
+}
+.contact-link {
+    display: inline-block;
+    background-color: #d49fa3;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.contact-link:hover {
+    background-color: #c08488;
+}
+/* Sección de Regalos */
+.gift-container {
+    background-color: #8a4b78;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gift-icon {
+    font-size: 2em;
+    color: #e3c6e5;
+    margin-bottom: 10px;
+}
+
+p1 {
+
+    color: #fff;
+}
+
+#gift-button {
+    background: linear-gradient(135deg, #e3c6e5, #a65d8c);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#gift-button:hover {
+    background: linear-gradient(135deg, #a65d8c, #e3c6e5);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+}
+
+#gift-details {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+    color: #ffffff;
+}
+
+#gift-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+#gift-details li {
+    margin-bottom: 5px;
+}
+
+/* Transición para mostrar detalles */
+#gift-details.show {
+    display: block;
+}
+/* Sección Sé Nuestro DJ */
+.dj-container {
+    background-color: #f5e7f0;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.music-icon {
+    font-size: 3em;
+    color: #d49fa3;
+    margin-bottom: 10px;
+}
+
+#dj-section h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5em;
+    color: #8a4b78;
+}
+
+#dj-section p {
+    color: #333333;
+    margin: 15px 0;
+    font-size: 1em;
+}
+
+#dj-section button {
+    background-color: #d49fa3;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+#dj-section button:hover {
+    background-color: #c08488;
+    transform: scale(1.05);
+}
+
+.spotify-embed {
+    margin-top: 20px;
+}
+
+/* Ajustes del formulario de Confirmación de Asistencia en móviles */
+@media (max-width: 767px) {
+    #rsvp {
+        padding: 20px 15px; /* Asegura márgenes laterales */
+    }
+
+    #rsvp-form {
+        padding: 0;
+    }
+
+    .form-group {
+        flex-direction: column; /* Coloca los elementos en una sola columna */
+        gap: 10px;
+    }
+
+    .form-group input,
+    #confirmation,
+    #rsvp-form textarea {
+        width: 100%; /* Asegura que los elementos ocupen el ancho completo */
+        padding: 10px;
+        box-sizing: border-box;
+        font-size: 1em;
+    }
+
+    #rsvp-form button {
+        width: 100%; /* Asegura que el botón ocupe el ancho completo */
+        font-size: 1em;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-link {
+        width: 100%; /* Asegura que los botones de contacto ocupen el ancho completo */
+        text-align: center;
+    }
+}
