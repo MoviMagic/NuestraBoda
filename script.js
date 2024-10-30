@@ -61,7 +61,7 @@ function submitForm(event) {
     alert("Gracias por confirmar tu asistencia. ¡Te esperamos!");
 }
 
-// Funciones para los botones de contacto
+// Función para el botón de enlace de WhatsApp en RSVP
 function sendWhatsAppMessage(event) {
     event.preventDefault();
 
@@ -80,20 +80,18 @@ function sendWhatsAppMessage(event) {
     window.open(whatsappURL, "_blank");
 }
 
-// Iniciar regalos
+// Función para alternar la visibilidad de los detalles de regalos
 function toggleGiftDetails() {
     const giftDetails = document.getElementById("gift-details");
     giftDetails.classList.toggle("show");
 }
 
-// Playlist Spotify
+// Enlace de Playlist de Spotify
 function openSpotify() {
     window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=f4595a183dc94215", "_blank");
 }
 
-// Iniciar la cuenta regresiva
-startCountdown();
-
+// Control del Slider de Imágenes
 let currentSlide = 0;
 const slideIntervalTime = 3000;
 let slideInterval;
@@ -126,3 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector('.prev').addEventListener('click', () => { stopAutoSlide(); prevSlide(); startAutoSlide(); });
     document.querySelector('.next').addEventListener('click', () => { stopAutoSlide(); nextSlide(); startAutoSlide(); });
 });
+
+// Iniciar la cuenta regresiva
+startCountdown();

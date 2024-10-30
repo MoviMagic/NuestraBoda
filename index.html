@@ -9,12 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Música de fondo -->
     <audio id="background-music" loop>
         <source src="https://yourclubox.com/box/MoviMagic/Videoteca/The-Astronaut.mp3" type="audio/mp3">
     </audio>
 
-    <!-- Recuadro de Bienvenida -->
     <div id="welcome-overlay">
         <div id="welcome-box">
             <h2>Bienvenido/a a la invitación de Gabriela y Sebastián</h2>
@@ -23,9 +21,9 @@
     </div>
 
     <div class="container">
-        <!-- Sección 1: Bienvenida -->
+        <!-- Sección de bienvenida -->
         <section id="welcome" class="section">
-            <h1>¡Nos casamos!</h1>
+            <h1 class="animate-icon">¡Nos casamos!</h1>
             <p>Queremos invitarlos a compartir este especial momento con nosotros.</p>
             <div class="names">
                 <h2>Gabriela</h2>
@@ -34,22 +32,22 @@
             </div>
         </section>
 
-        <!-- Sección 2: Fecha y Hora -->
+        <!-- Sección Fecha y Hora -->
         <section id="date" class="section">
             <div class="date-container">
                 <div class="date-image">
-                    <img src="images/pareja1.jpg" alt="Foto de la boda">
+                    <img src="images/pareja1.jpg" alt="Foto de la boda" class="animate-image">
                 </div>
                 <div class="date-text">
-                    <h2><i class="fas fa-calendar-alt gold-icon"></i> Fecha y Hora</h2>
+                    <h2><i class="fas fa-calendar-alt gold-icon animate-icon"></i> Fecha y Hora</h2>
                     <p>Nos vemos el <strong>sábado 22 de Febrero del 2025</strong> a las <strong>12:30 hrs.</strong></p>
                 </div>
             </div>
         </section>
 
-        <!-- Sección 3: Ubicación -->
+        <!-- Sección Ubicación -->
         <section id="location" class="section">
-            <h2><i class="fas fa-map-marker-alt gold-icon"></i> Lugar</h2>
+            <h2><i class="fas fa-map-marker-alt gold-icon animate-icon"></i> Lugar</h2>
             <div class="location-container">
                 <div class="location-text">
                     <h3>Ceremonia y Fiesta</h3>
@@ -63,9 +61,9 @@
             </div>
         </section>
 
-        <!-- Sección 4: Cuenta Regresiva -->
+        <!-- Sección Cuenta Regresiva -->
         <section id="countdown" class="section">
-            <h2 class="countdown-title">La fecha se acerca...</h2>
+            <h2 class="countdown-title animate-icon">La fecha se acerca...</h2>
             <p class="countdown-subtitle">Prepara tu mejor outfit porque solo faltan:</p>
             <div id="countdown-timer">
                 <div><span id="days">00</span><br>Días</div>
@@ -73,10 +71,9 @@
                 <div><span id="minutes">00</span><br>Minutos</div>
                 <div><span id="seconds">00</span><br>Segundos</div>
             </div>
-            <br><p class="countdown-quote">“Ninguna medida de tiempo contigo será suficiente, pero empecemos con un para siempre”.</p>
         </section>
 
-        <!-- Sección 5: Dress Code -->
+        <!-- Sección Dress Code -->
         <section id="dress-code" class="section">
             <h2>Dress Code</h2>
             <p>Ellos traje formal deberán usar,</p>
@@ -84,68 +81,40 @@
             <p>y juntos puntualmente llegarán.</p>
         </section>
 
-        <!-- Sección 6: Slider de Imágenes -->
+        <!-- Sección Galería de Imágenes -->
         <section id="gallery" class="section">
             <div class="slider">
                 <div class="slides">
-                    <div class="slide"><img src="images/imagen1.jpg" alt="Imagen 1"></div>
-                    <div class="slide"><img src="images/imagen2.jpg" alt="Imagen 2"></div>
-                    <div class="slide"><img src="images/imagen3.jpg" alt="Imagen 3"></div>
-                    <div class="slide"><img src="https://yourclubox.com/box/MoviMagic/Videoteca/imagen4.JPG" alt="Imagen 4"></div>
-                    <div class="slide"><img src="images/imagen5.jpg" alt="Imagen 5"></div>
-                    <div class="slide"><img src="images/imagen6.jpg" alt="Imagen 6"></div>
+                    <div class="slide"><img src="images/imagen1.jpg" alt="Imagen 1" class="animate-image"></div>
+                    <div class="slide"><img src="images/imagen2.jpg" alt="Imagen 2" class="animate-image"></div>
+                    <div class="slide"><img src="images/imagen3.jpg" alt="Imagen 3" class="animate-image"></div>
+                    <div class="slide"><img src="images/imagen4.jpg" alt="Imagen 4" class="animate-image"></div>
+                    <div class="slide"><img src="images/imagen5.jpg" alt="Imagen 5" class="animate-image"></div>
+                    <div class="slide"><img src="images/imagen6.jpg" alt="Imagen 6" class="animate-image"></div>
                 </div>
                 <button class="slider-button prev" onclick="prevSlide()">&#10094;</button>
                 <button class="slider-button next" onclick="nextSlide()">&#10095;</button>
             </div>
         </section>
 
-        <!-- Sección 7: Itinerario -->
+        <!-- Sección Itinerario -->
         <section id="itinerary" class="section">
             <h2>Itinerario</h2>
             <div class="timeline">
-                <div class="event">
-                    <img src="images/icon_ceremony.png" alt="Ceremonia">
-                    <p>Ceremonia</p>
-                    <span>12:30 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_rings.png" alt="Sí quiero!">
-                    <p>¡Sí quiero!</p>
-                    <span>13:00 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_photos.png" alt="Fotos">
-                    <p>Fotos</p>
-                    <span>13:30 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_toast.png" alt="Brindis">
-                    <p>Brindis</p>
-                    <span>14:30 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_dinner.png" alt="Comida">
-                    <p>Comida</p>
-                    <span>15:00 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_cake.png" alt="Pastel">
-                    <p>Pastel</p>
-                    <span>15:30 hrs.</span>
-                </div>
-                <div class="event">
-                    <img src="images/icon_party.png" alt="Fiesta">
-                    <p>¡Fiesta!</p>
-                    <span>16:00 hrs.</span>
-                </div>
+                <div class="event"><p>Ceremonia</p><span>12:30 hrs.</span></div>
+                <div class="event"><p>¡Sí quiero!</p><span>13:00 hrs.</span></div>
+                <div class="event"><p>Fotos</p><span>13:30 hrs.</span></div>
+                <div class="event"><p>Brindis</p><span>14:30 hrs.</span></div>
+                <div class="event"><p>Comida</p><span>15:00 hrs.</span></div>
+                <div class="event"><p>Pastel</p><span>15:30 hrs.</span></div>
+                <div class="event"><p>¡Fiesta!</p><span>16:00 hrs.</span></div>
             </div>
         </section>
 
-        <!-- Sección 8: Confirmación de Asistencia -->
+        <!-- Sección Confirmación de Asistencia -->
         <section id="rsvp" class="section">
             <h2>Confirma tu Asistencia</h2>
-            <form id="rsvp-form" onsubmit="sendWhatsAppMessage(event)">
+            <form id="rsvp-form" onsubmit="submitForm(event)">
                 <div class="form-group">
                     <input type="text" id="name" placeholder="Nombre y apellido" required>
                     <input type="email" id="email" placeholder="Email" required>
@@ -160,50 +129,41 @@
                 </div>
                 <textarea id="restrictions" placeholder="¿Tienes restricciones de alimentos o alergias? Ejemplo: Vegano, vegetariano, etc."></textarea>
                 <textarea id="message" placeholder="Mensaje para los novios (opcional)"></textarea>
-                <button type="submit" style="background-color: var(--elegant-gold); color: white;">Enviar</button>
+                <button type="submit">Enviar</button>
             </form>
-            <div class="contact-options">
-                <p>¿Quieres contactarte con los Novios? Pincha aquí</p>
-                <div class="contact-buttons">
-                    <a href="https://wa.me/56998590466" target="_blank" class="contact-link" style="background-color: var(--elegant-gold); color: white;"><i class="fas fa-female"></i> Contactar a La Novia</a>
-                    <a href="https://wa.me/56949470628" target="_blank" class="contact-link" style="background-color: var(--elegant-gold); color: white;"><i class="fas fa-male"></i> Contactar al Novio</a>
-                </div>
-            </div>
         </section>
 
-        <!-- Sección 9: Regalos -->
+        <!-- Sección Regalos -->
         <section id="gifts" class="section">
             <div class="gift-container">
-                <i class="fas fa-gift gift-icon"></i>
+                <i class="fas fa-gift gift-icon animate-icon"></i>
                 <br><p1>No contaremos con lista de novios, por lo que tu transferencia será nuestro mejor regalo...</p1>
                 <button id="gift-button" onclick="toggleGiftDetails()">❤️ Regalos click aquí</button>
                 <div id="gift-details" class="gift-details">
                     <ul>
-                        <li>Juan Pablo Cristian Silva Pena</li>
-                        <li>RUT: 18.784.802-4</li>
-                        <li>Banco Santander, Cuenta Corriente: 0 000 73 77763 1</li>
-                        <li>Correo: jpsilvapena@gmail.com</li>
+                        <li>Sebastián Andres Jofré Marambio</li>
+                        <li>RUT: 19.666.442-4</li>
+                        <li>Banco Estado, Cuenta Corriente: 0 000 73 777xx x</li>
+                        <li>Correo: sebastianjofremar@gmail.com</li>
                     </ul>
                 </div>
             </div>
         </section>
 
-        <!-- Sección 10: Playlist -->
+        <!-- Sección Playlist -->
         <section id="dj-section" class="section">
             <div class="dj-container">
-                <i class="fas fa-music music-icon"></i>
+                <i class="fas fa-music music-icon animate-icon"></i>
                 <h2>SÉ NUESTRO DJ</h2>
                 <p>Motívate y agrega los hits que no pueden faltar en el carrete en esta playlist colaborativa de Spotify. ¡A bailar! 💃🕺</p>
-                <button onclick="openSpotify()" style="background-color: var(--elegant-gold); color: white;">Agregar canciones</button>
+                <button onclick="openSpotify()">Agregar canciones</button>
                 <div class="spotify-embed">
-                    <!-- Reemplaza el siguiente enlace con el de tu playlist de Spotify -->
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1lIxwJT9hg9B3QYN0BqFNu?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
             </div>
         </section>
     </div>
 
-    <!-- Botón de control de música -->
     <button id="music-control" onclick="toggleMusic()">
         <i class="fas fa-pause"></i>
     </button>
