@@ -86,11 +86,15 @@ function toggleGiftDetails() {
     giftDetails.classList.toggle("show");
 }
 
-// Enlace de Playlist de Spotify
+// Enlace de Playlist de YouTube
 function openYouTube() {
         // Reemplaza 'PL_ID_DE_TU_PLAYLIST' con el ID de tu playlist de YouTube
         window.open("https://youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=ig1Fg7eTZ65ir43_gr9MkA", "_blank");
     }
+// Enlace de Playlist de Spotify
+function openSpotify() {
+    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=f4595a183dc94215", "_blank");
+} 
 
 // Control del Slider de Imágenes
 let currentSlide = 0;
