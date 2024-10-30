@@ -93,7 +93,7 @@ function openYouTube() {
     }
 // Enlace de Playlist de Spotify
 function openSpotify() {
-    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=f4595a183dc94215", "_blank");
+    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=513609d3c0a54b96", "_blank");
 } 
 
 // Control del Slider de Imágenes
