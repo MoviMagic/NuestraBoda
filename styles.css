@@ -910,3 +910,19 @@ p1 {
         padding: 10px 20px; /* Ampliar el botón para que sea más grande */
     }
 }
+/* Animación de deslizamiento desde la izquierda */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Aplicar la animación a la imagen */
+.date-image .animate-image {
+    animation: slideInFromLeft 1.5s ease-out forwards;
+}
