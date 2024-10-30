@@ -88,7 +88,7 @@ function toggleGiftDetails() {
 
 // Enlace de Playlist de Spotify
 function openSpotify() {
-    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=f4595a183dc94215", "_blank");
+    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=253ce2cef75e46f5&pt=4bb2e701c7ed373c688a81dab811df73", "_blank");
 }
 
 // Control del Slider de Imágenes
