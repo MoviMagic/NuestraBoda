@@ -164,14 +164,14 @@ body, html {
 
 .names h2 {
     font-family: 'Dancing Script', cursive;
-    font-size: 5.5em;
+    font-size: 4.5em;
     color: var(--elegant-gold);
     margin: 0;
 }
 
 .names h3 {
     font-family: 'Dancing Script', cursive;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--elegant-gold);
     margin: 0;
 }
