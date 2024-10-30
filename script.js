@@ -87,9 +87,10 @@ function toggleGiftDetails() {
 }
 
 // Enlace de Playlist de Spotify
-function openSpotify() {
-    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=253ce2cef75e46f5&pt=4bb2e701c7ed373c688a81dab811df73", "_blank");
-}
+function openYouTube() {
+        // Reemplaza 'PL_ID_DE_TU_PLAYLIST' con el ID de tu playlist de YouTube
+        window.open("https://www.youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=XzNMPgLfE-vE9Qjqq-oKSQ", "_blank");
+    }
 
 // Control del Slider de Imágenes
 let currentSlide = 0;
