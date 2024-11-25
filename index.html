@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <audio id="background-music" loop>
@@ -81,34 +82,6 @@
             <p>y juntos puntualmente llegarán.</p>
         </section>
 
-        <!-- Sección Galería de Imágenes -->
-        <section id="gallery" class="section">
-            <div class="slider">
-                <div class="slides">
-                    <div class="slide"><img src="images/imagen1.jpg" alt="Imagen 1" class="animate-image"></div>
-                    <div class="slide"><img src="images/imagen2.jpg" alt="Imagen 2" class="animate-image"></div>
-                    <div class="slide"><img src="images/imagen3.jpg" alt="Imagen 3" class="animate-image"></div>
-                    <div class="slide"><img src="images/imagen4.jpg" alt="Imagen 4" class="animate-image"></div>
-                    <div class="slide"><img src="images/imagen5.jpg" alt="Imagen 5" class="animate-image"></div>
-                    <div class="slide"><img src="images/imagen6.jpg" alt="Imagen 6" class="animate-image"></div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sección Itinerario -->
-        <section id="itinerary" class="section">
-            <h2>Itinerario</h2>
-            <div class="timeline">
-                <div class="event"><img src="images/icon_ceremony.png" alt="Ceremonia"><p>Ceremonia</p><span>12:30 hrs.</span></div>
-                <div class="event"><img src="images/icon_rings.png" alt="Sí quiero!"><p>¡Sí quiero!</p><span>13:00 hrs.</span></div>
-                <div class="event"><img src="images/icon_photos.png" alt="Fotos"><p>Fotos</p><span>13:30 hrs.</span></div>
-                <div class="event"><img src="images/icon_toast.png" alt="Brindis"><p>Brindis</p><span>14:30 hrs.</span></div>
-                <div class="event"><img src="images/icon_dinner.png" alt="Comida"><p>Comida</p><span>15:00 hrs.</span></div>
-                <div class="event"><img src="images/icon_cake.png" alt="Pastel"><p>Pastel</p><span>15:30 hrs.</span></div>
-                <div class="event"><img src="images/icon_party.png" alt="Fiesta"><p>¡Fiesta!</p><span>16:00 hrs.</span></div>
-            </div>
-        </section>
-
         <!-- Sección Confirmación de Asistencia -->
         <section id="rsvp" class="section">
             <h2>Confirma tu Asistencia</h2>
@@ -125,7 +98,7 @@
                         <option value="No">No podré asistir</option>
                     </select>
                 </div>
-                <textarea id="restrictions" placeholder="¿Tienes restricciones de alimentos o alergias? Ejemplo: Vegano, vegetariano, etc."></textarea>
+                <textarea id="restrictions" placeholder="¿Tienes restricciones de alimentos o alergias?"></textarea>
                 <textarea id="message" placeholder="Mensaje para los novios (opcional)"></textarea>
                 <button type="submit">Enviar</button>
             </form>
@@ -135,32 +108,18 @@
         <section id="gifts" class="section">
             <div class="gift-container">
                 <i class="fas fa-gift gift-icon animate-icon"></i>
-                <br><p1>No contaremos con lista de novios, por lo que tu transferencia será nuestro mejor regalo...</p1>
-                <br><button id="gift-button" onclick="toggleGiftDetails()">❤️ Regalos click aquí</button>
+                <p>No contaremos con lista de novios, por lo que tu transferencia será nuestro mejor regalo...</p>
+                <button id="gift-button" onclick="toggleGiftDetails()">❤️ Regalos click aquí</button>
                 <div id="gift-details" class="gift-details">
                     <ul>
                         <li>Sebastián Andres Jofré Marambio</li>
                         <li>RUT: 19.666.442-4</li>
-                        <li>Banco Estado, Chequera electronica: 13370855549</li>
+                        <li>Banco Estado, Chequera electrónica: 13370855549</li>
                         <li>Correo: sebastianjofremar@gmail.com</li>
                     </ul>
                 </div>
             </div>
         </section>
-
-        <!-- Sección Playlist -->
-<section id="dj-section" class="section">
-    <div class="dj-container">
-        <i class="fas fa-music music-icon animate-icon"></i>
-        <h2>SÉ NUESTRO DJ</h2>
-        <p>Motívate y agrega los hits que no pueden faltar en el carrete, en esta playlist colaborativa de YouTube. ¡A bailar! 💃🕺</p>
-        <button onclick="openYouTube()">Agregar canciones YouTube</button><br>
-        <br><div class="youtube-embed">
-            <!-- Reemplaza 'PL_ID_DE_TU_PLAYLIST' con el ID de tu playlist de YouTube -->
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?si=Qlz3IzVQQbGKZKyo&amp;list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=ig1Fg7eTZ65ir43_gr9MkA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
     </div>
 
     <button id="music-control" onclick="toggleMusic()">

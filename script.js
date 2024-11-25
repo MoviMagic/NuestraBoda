@@ -72,7 +72,7 @@ function sendWhatsAppMessage(event) {
     const restrictions = document.getElementById("restrictions").value || "Sin restricciones alimentarias";
     const message = document.getElementById("message").value || "";
 
-const noviaWhatsAppNumber = "+56998590466"; // Reemplaza con el número de WhatsApp de la novia
+    const noviaWhatsAppNumber = "56953916562"; // Reemplaza con el número de WhatsApp de la novia
 
     const whatsappMessage = `Hola, soy ${name}. Confirmación: ${confirmation}. Teléfono: ${phone}. Email: ${email}. Restricciones: ${restrictions}. Mensaje: ${message}`;
 
