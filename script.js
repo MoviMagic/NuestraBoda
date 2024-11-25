@@ -1,3 +1,4 @@
+// Referencias a elementos del DOM
 const music = document.getElementById("background-music");
 const musicControl = document.getElementById("music-control");
 
@@ -55,28 +56,27 @@ function toggleMusic() {
     }
 }
 
-// Función para el formulario RSVP
-function submitForm(event) {
-    event.preventDefault();
-    alert("Gracias por confirmar tu asistencia. ¡Te esperamos!");
-}
-
-// Función para el botón de enlace de WhatsApp en RSVP
+// Función para enviar confirmación de asistencia por WhatsApp
 function sendWhatsAppMessage(event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
     const confirmation = document.getElementById("confirmation").value;
-    const restrictions = document.getElementById("restrictions").value || "Sin restricciones alimentarias";
-    const message = document.getElementById("message").value || "";
+    const restrictions = document.getElementById("restrictions").value.trim() || "Sin restricciones alimentarias";
+    const message = document.getElementById("message").value.trim() || "";
+
+    if (!name || !email || !phone || !confirmation) {
+        alert("Por favor, completa todos los campos obligatorios.");
+        return;
+    }
 
     const noviaWhatsAppNumber = "56998590466"; // Reemplaza con el número de WhatsApp de la novia
-
     const whatsappMessage = `Hola, soy ${name}. Confirmación: ${confirmation}. Teléfono: ${phone}. Email: ${email}. Restricciones: ${restrictions}. Mensaje: ${message}`;
-
     const whatsappURL = `https://wa.me/${noviaWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+    console.log("WhatsApp URL:", whatsappURL); // Debug: Verifica la URL generada
     window.open(whatsappURL, "_blank");
 }
 
@@ -88,14 +88,8 @@ function toggleGiftDetails() {
 
 // Enlace de Playlist de YouTube
 function openYouTube() {
-        // Reemplaza 'PL_ID_DE_TU_PLAYLIST' con el ID de tu playlist de YouTube
-        window.open("https://youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=ig1Fg7eTZ65ir43_gr9MkA", "_blank");
-    }
-
-// Playlist Spotify
-function openSpotify() {
-    window.open("https://open.spotify.com/playlist/1lIxwJT9hg9B3QYN0BqFNu?si=f4595a183dc94215", "_blank");
-} 
+    window.open("https://youtube.com/playlist?list=PLv7ed5wMEp1rYJa9oDXocU3-SiDZnW2Oj&jct=ig1Fg7eTZ65ir43_gr9MkA", "_blank");
+}
 
 // Control del Slider de Imágenes
 let currentSlide = 0;
