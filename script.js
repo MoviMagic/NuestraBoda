@@ -72,13 +72,20 @@ function sendWhatsAppMessage(event) {
     const restrictions = document.getElementById("restrictions").value || "Sin restricciones alimentarias";
     const message = document.getElementById("message").value || "";
 
-    const noviaWhatsAppNumber = "56953916562"; // Reemplaza con el número de WhatsApp de la novia
+    const noviaWhatsAppNumber = "56998590466"; // Número en formato internacional
+
+    // Verifica si los datos se obtienen correctamente
+    console.log("Datos del formulario:", { name, email, phone, confirmation, restrictions, message });
 
     const whatsappMessage = `Hola, soy ${name}. Confirmación: ${confirmation}. Teléfono: ${phone}. Email: ${email}. Restricciones: ${restrictions}. Mensaje: ${message}`;
 
     const whatsappURL = `https://wa.me/${noviaWhatsAppNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    console.log("Enlace generado para WhatsApp:", whatsappURL);
+
+    // Abre el enlace en una nueva ventana/pestaña
     window.open(whatsappURL, "_blank");
 }
+
 
 // Función para alternar la visibilidad de los detalles de regalos
 function toggleGiftDetails() {
